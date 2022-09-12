@@ -1,21 +1,31 @@
-<script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <div class="container">
+    <div class="row">
+      <ContactsTable>
+        <template v-slot:header>
+          <h1 class="text-center mb-4">IronContacts</h1>
+        </template>
+      </ContactsTable>
+    </div>
+  </div>
 </template>
 
+<script>
+import ContactsTable from "./components/ContactsTable.vue";
+
+export default {
+  name: "App",
+  components: { ContactsTable },
+};
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.container {
+  padding: 2rem 0rem;
+  font-size: 1.2em;
+}
+
+h1 {
+  margin: 2rem 0rem 1rem;
 }
 </style>
