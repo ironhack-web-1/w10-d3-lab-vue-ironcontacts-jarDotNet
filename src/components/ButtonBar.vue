@@ -24,20 +24,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "ButtonBar",
-  props: {
-    sortByPopularityClass: {
-      type: String,
-      required: true,
-    },
-    sortByNameClass: {
-      type: String,
-      required: true,
-    },
+<script setup>
+const props = defineProps({
+  sortByPopularityClass: {
+    type: String,
+    required: true,
   },
-};
+  sortByNameClass: {
+    type: String,
+    required: true,
+  },
+});
 </script>
 
 <style scoped>
