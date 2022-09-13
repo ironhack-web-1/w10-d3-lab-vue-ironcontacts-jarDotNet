@@ -22,20 +22,17 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "AlertInfo",
-  props: {
-    numItems: {
-      type: Number,
-      default: 0,
-    },
-    totalItems: {
-      type: Number,
-      default: 0,
-    },
+<script setup>
+const props = defineProps({
+  numItems: {
+    type: Number,
+    default: 0,
   },
-};
+  totalItems: {
+    type: Number,
+    default: 0,
+  },
+});
 </script>
 
 <style scoped>

@@ -10,13 +10,8 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import ContactsTable from "./components/ContactsTable.vue";
-
-export default {
-  name: "App",
-  components: { ContactsTable },
-};
 </script>
 
 <style>
