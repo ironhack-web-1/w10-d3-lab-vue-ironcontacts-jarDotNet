@@ -58,8 +58,8 @@
 <script>
 import { reactive, ref, computed, onMounted } from "vue";
 import AlertInfo from "./AlertInfo.vue";
-import contacts from "../contacts.json";
 import ButtonBar from "./ButtonBar.vue";
+import contacts from "../contacts.json";
 
 export default {
   name: "ContactsTable",
